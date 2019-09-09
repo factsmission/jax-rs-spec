@@ -20,3 +20,7 @@ I argue that following example included in RFC 7231 provides the better interpre
 By this interpretation a definition of qs would suggest itself by which qs is not merely a tertiary sorting criteria but an indicator of the quality in which a response in that format can be produced. So for example if the server can produce audio/basic; qs=0.1 and audio/extended; qs=1 the server should return audio/extended as after an 80% markdown in quality it is the best available format.
 
 To achieve this, in Section 3.8 step 7 the secondary key for sorting M is defined as the product of q and qs and q is used as tertiary key, anaogous changes have been made in section 3.7.2.
+
+## Implementation
+
+The following projects aims at providing an implementation of JAX-RS-mod-qs: https://github.com/retog/Resteasy
